@@ -1,16 +1,33 @@
 <!DOCTYPE html>
+<html>
+
 <head>
+  <meta charset="UTF-8" />
   <title>Calorie Counter</title>
+  <link href="form.css" rel="stylesheet" type="text/css" />
 </head>
+
+
+<div id="container">
 <body>
-  <h1>Let's Count some Calories!</h1>
+  <h1>Let's count some calories!</h1>
   <formset id="calorieForm" onsubmit="returnFalse">
-    <input type="textbox" id="calorieOne" />
-    <input type="textbox" id="calorieTwo" />
-    <button id="submit" />Calculate
-      <p>=</p>
-      <input type="textbox" id="resultCalorie" />
+    <div id="textboxes"
+    <label for="foodItem">Enter food: </label>
+    <input type="textbox" id="foodItem" /><br>
+    <label for="calorieAmt">Enter calories: </label>
+    <input type="textbox" id="calorieAmt"/><br>
+  <div id="button">
+    <input type="submit" id="submit" />
+  </div>
+</div>
+  <div id="result">
+    <label for="resultCalories">Calorie total: </label>
+    <input type="textbox" id="resultCalories" value="0" />
+    </div>
   </formset>
 </body>
+</div>
+
 <script src="script.js"></script>
 </html>
